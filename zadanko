@@ -1,0 +1,146 @@
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp21
+{
+    internal class Pies
+    {
+        public string imie;
+        public double wiek;
+        public double dl_psa; //długość psa
+        public double il_lap; //ilość łap
+        public double dl_ogona; //długość ogona
+        public double dl_jezyka; //długość języka
+        public double Iq; 
+
+        
+
+        public Pies(string imie, double wiek, double dl_psa, double il_lap, double dl_ogona, double dl_jezyka, double Iq)
+        {
+            Imie = imie;
+            Wiek = wiek;
+            Dl_psa = dl_psa;
+            Il_lap = il_lap;
+            Dl_ogona = dl_ogona;
+            Dl_jezyka = dl_jezyka;
+            iq = Iq;
+        }
+        public Pies()
+        {
+            Imie = "";
+            Wiek = 0;
+            Dl_psa = 0;
+            Il_lap = 0;
+            Dl_ogona = 0;
+            Dl_jezyka = 0;
+            iq = 0;
+
+        }
+        public string Imie()
+        {
+            get(return imie; )
+            set
+                {
+                if(value.Length>= 213769||String.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("nie przyjmuje tego!")
+                }
+                else
+                {
+                    imie = value;
+                }
+            }
+        }
+        public double Wiek()
+        {
+            get{ return wiek; }
+            set
+                {
+                if(value.Length>= 100|| String.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("nie przyjmuje tego!")
+                }
+                else
+                {
+                    wiek = value;
+                }
+            }
+        }
+        public double Dl_psa()
+        {
+            get{ return dl_psa; }
+            set
+                {
+                if (value.Length >= 100000 || String.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("nie przyjmuje tego!")
+                }
+                else
+                {
+                    dl_psa = value;
+                }
+            }
+        }
+        public double Il_lap()
+        {
+            get{return il_lap; }
+            set
+                {
+                if (value.Length <4 || String.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("nie przyjmuje tego!")
+                }
+                else
+                {
+                    il_lap = value;
+                }
+            }
+        }
+        public double Dl_ogona()
+        {
+            get{ return dl_ogona; }
+            set
+                {
+                if (value.Length >= 100 || String.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("nie przyjmuje tego!")
+                }
+                else
+                {
+                    dl_ogona = value;
+                }
+            }
+        }
+        public double Dl_jezyka()
+        {
+            get{return dl_jezyka; }
+            set
+                {
+                if (value.Length >= 2137 || String.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("nie przyjmuje tego!")
+                }
+                else
+                {
+                    dl_jezyka = value;
+                }
+            }
+        }
+        public double Iq()
+        {
+            get{ return iq; }
+            set
+                {
+                if (value.Length >= 300|| value.Length <= 15 || String.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("nie przyjmuje tego!")
+                }
+                else
+                {
+                    iq = value;
+                }
+            }
+        }
+
+    }
+}
